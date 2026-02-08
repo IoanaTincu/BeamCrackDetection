@@ -1,0 +1,12 @@
+Dataset: DELTAF
+Split analyzed: train
+Rows analyzed: 7014
+Features: 10
+LASSO alpha: 0.0002237821065827934
+
+Top 5 features by consensus_score (lower is better):
+  deltaf_mode1: MI=0.970177, PermImp=1.536262, SingleR2=0.340379, |Spearman|=0.825555
+  deltaf_mode2: MI=0.699099, PermImp=0.156007, SingleR2=0.046757, |Spearman|=0.287242
+  deltaf_mode3: MI=0.553093, PermImp=0.076968, SingleR2=0.004991, |Spearman|=0.134658
+  deltaf_mode4: MI=0.476144, PermImp=0.039221, SingleR2=0.000469, |Spearman|=0.086501
+  deltaf_mode5: MI=0.416642, PermImp=0.027358, SingleR2=-0.000907, |Spearman|=0.063870
