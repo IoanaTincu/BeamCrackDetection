@@ -313,6 +313,10 @@ def analyze_dataset(
     if not feature_cols:
         raise ValueError(f"[{name}] No feature columns found for prefixes {feature_prefixes}")
 
+    # Use only the first N modes (e.g., 6)
+    N_MODES_TO_USE = 6
+    feature_cols = feature_cols[:N_MODES_TO_USE]
+
     df_use = ensure_numeric(df_use, feature_cols + ["x"])
     df_use = df_use.dropna(subset=feature_cols + ["x"])
 
@@ -385,21 +389,21 @@ def analyze_dataset(
         f.write(f"Features: {len(feature_cols)}\n")
         f.write(f"LASSO alpha: {coef_df.attrs.get('lasso_alpha', None)}\n\n")
 
-        f.write("Top 5 features by consensus_score (lower is better):\n")
-        top5 = metrics.head(5)
-        for feat in top5.index:
+        f.write("Top 4 features by consensus_score (lower is better):\n")
+        metrics_top = metrics.head(4)
+        for feat in metrics_top.index:
             f.write(
                 f"  {feat}: "
-                f"MI={top5.loc[feat, 'mutual_info']:.6f}, "
-                f"PermImp={top5.loc[feat, 'perm_importance_r2_drop']:.6f}, "
-                f"SingleR2={top5.loc[feat, 'single_feature_cv_r2']:.6f}, "
-                f"|Spearman|={top5.loc[feat, 'abs_spearman_r']:.6f}\n"
+                f"MI={metrics_top.loc[feat, 'mutual_info']:.6f}, "
+                f"PermImp={metrics_top.loc[feat, 'perm_importance_r2_drop']:.6f}, "
+                f"SingleR2={metrics_top.loc[feat, 'single_feature_cv_r2']:.6f}, "
+                f"|Spearman|={metrics_top.loc[feat, 'abs_spearman_r']:.6f}\n"
             )
 
     print(f"\n[{name}] Analysis complete.")
     print(f"  Rows analyzed: {len(df_use)} | Features: {len(feature_cols)} | Split: {use_split}")
     print(f"  Saved: {metrics_path}")
-    print(f"  Top features: {list(metrics.head(5).index)}")
+    print(f"  Top features: {list(metrics.head(4).index)}")
 
     return metrics
 

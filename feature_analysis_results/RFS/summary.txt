@@ -1,12 +1,11 @@
 Dataset: RFS
 Split analyzed: train
 Rows analyzed: 7014
-Features: 10
-LASSO alpha: 0.0002237821065827934
+Features: 6
+LASSO alpha: 0.00016928295699280454
 
-Top 5 features by consensus_score (lower is better):
-  RFS_mode1: MI=0.970177, PermImp=1.536262, SingleR2=0.340379, |Spearman|=0.825555
-  RFS_mode2: MI=0.699099, PermImp=0.156007, SingleR2=0.046757, |Spearman|=0.287242
-  RFS_mode3: MI=0.553093, PermImp=0.076968, SingleR2=0.004991, |Spearman|=0.134658
-  RFS_mode4: MI=0.476144, PermImp=0.039221, SingleR2=0.000469, |Spearman|=0.086501
-  RFS_mode5: MI=0.416642, PermImp=0.027358, SingleR2=-0.000907, |Spearman|=0.063870
+Top 4 features by consensus_score (lower is better):
+  RFS_mode1: MI=0.972317, PermImp=1.628079, SingleR2=0.340379, |Spearman|=0.825555
+  RFS_mode2: MI=0.695753, PermImp=0.209464, SingleR2=0.046757, |Spearman|=0.287242
+  RFS_mode3: MI=0.551930, PermImp=0.115365, SingleR2=0.004991, |Spearman|=0.134658
+  RFS_mode4: MI=0.476621, PermImp=0.056163, SingleR2=0.000469, |Spearman|=0.086501

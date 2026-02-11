@@ -1,12 +1,11 @@
 Dataset: DLC
 Split analyzed: train
 Rows analyzed: 7000
-Features: 10
+Features: 6
 LASSO alpha: 0.00029226933845691636
 
-Top 5 features by consensus_score (lower is better):
-  DLC_mode1: MI=4.697051, PermImp=1.062584, SingleR2=0.894608, |Spearman|=0.994387
-  DLC_mode2: MI=4.799716, PermImp=0.052370, SingleR2=0.043346, |Spearman|=0.246974
-  DLC_mode10: MI=2.167953, PermImp=0.009648, SingleR2=0.074324, |Spearman|=0.281213
-  DLC_mode9: MI=2.513644, PermImp=0.009600, SingleR2=0.046013, |Spearman|=0.202535
-  DLC_mode3: MI=4.170694, PermImp=0.027444, SingleR2=0.001450, |Spearman|=0.049603
+Top 4 features by consensus_score (lower is better):
+  DLC_mode1: MI=4.697126, PermImp=1.137883, SingleR2=0.894608, |Spearman|=0.994387
+  DLC_mode2: MI=4.800005, PermImp=0.101352, SingleR2=0.043346, |Spearman|=0.246974
+  DLC_mode3: MI=4.170847, PermImp=0.035930, SingleR2=0.001450, |Spearman|=0.049603
+  DLC_mode5: MI=3.457818, PermImp=0.015599, SingleR2=0.002443, |Spearman|=0.059781

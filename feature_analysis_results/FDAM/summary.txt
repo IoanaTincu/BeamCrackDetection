@@ -1,12 +1,11 @@
 Dataset: FDAM
 Split analyzed: train
 Rows analyzed: 7014
-Features: 10
-LASSO alpha: 0.00022378210658265772
+Features: 6
+LASSO alpha: 0.00016928295699270197
 
-Top 5 features by consensus_score (lower is better):
-  fdam_mode1: MI=0.969612, PermImp=1.566606, SingleR2=0.340379, |Spearman|=0.825555
-  fdam_mode2: MI=0.698908, PermImp=0.156579, SingleR2=0.046757, |Spearman|=0.287242
-  fdam_mode3: MI=0.553093, PermImp=0.075725, SingleR2=0.004991, |Spearman|=0.134658
-  fdam_mode4: MI=0.476138, PermImp=0.033599, SingleR2=0.000469, |Spearman|=0.086501
-  fdam_mode5: MI=0.416642, PermImp=0.025584, SingleR2=-0.000907, |Spearman|=0.063870
+Top 4 features by consensus_score (lower is better):
+  fdam_mode1: MI=0.971663, PermImp=1.633033, SingleR2=0.340379, |Spearman|=0.825555
+  fdam_mode2: MI=0.695500, PermImp=0.200096, SingleR2=0.046757, |Spearman|=0.287242
+  fdam_mode3: MI=0.552009, PermImp=0.110269, SingleR2=0.004991, |Spearman|=0.134658
+  fdam_mode4: MI=0.476613, PermImp=0.059112, SingleR2=0.000469, |Spearman|=0.086501
